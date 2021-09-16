@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-alpine
+FROM openjdk:11-jdk as builder
 ENV	APP_HOME=/usr/app/
 WORKDIR $APP_HOME
 COPY build/libs/*.jar application.jar
